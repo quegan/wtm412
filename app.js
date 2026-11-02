@@ -16,7 +16,7 @@ const MESSAGES = {
 function showDone(code) {
   const link = CONFIG.siteUrl + '?r=' + code;
   $('mylink').textContent = link;
-  form.hidden = true; $('referred').hidden = true; $('done').hidden = false;
+  form.hidden = true; $('intro').hidden = true; $('referred').hidden = true; $('done').hidden = false;
   window.scrollTo(0, 0);
   $('copy').onclick = async () => {
     try { await navigator.clipboard.writeText(link); }
